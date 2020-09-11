@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Smash it | GADS 2020</title>
     <link rel="manifest" href="manifest.json" />
+    <meta name="description" content="GADS2020 PWA project">
     <!-- ios support -->
     <link rel="apple-touch-icon" href="./images/icons/icon-72x72.png" />
     <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png" />
@@ -25,13 +26,13 @@
         <h1 id="title"><a href="./">Splash it</a></h1>
         <ul>
           <li><a href="./">Home</a></li>
-          <li><a href="https://github.com/tasiukwaplong/" target="_blank">About</a></li>
+          <li><a rel="noreferrer" href="https://github.com/tasiukwaplong/" target="_blank">About</a></li>
         </ul>
       </nav>
       <div id="container">
         <div class="input">
-          <h2>ENTER CITY NAME:</h2>
-            <input type="search" class="inputValue">
+          <h2><label for="search">ENTER CITY NAME:</label></h2>
+            <input id="search" type="search" class="inputValue">
             <input type="submit" value="Submit" class="button">
         </div>
         <br>
@@ -43,7 +44,7 @@
         </div>
         <div id="temp">
              <p><i>Feels Like </i><span id="temp-value"></span><span id="temp-unit">&#176C</span></p>
-            <img src="" alt="" id="temp-icon">
+            <img src="" alt="" id="temp-icon" alt="temp-icon">
         </div>
         <div id="climate">
             <p><span id="time"> </span></p>
@@ -54,11 +55,11 @@
         
         <div>
             <p>Sunrise: <span id="sunrise"></span></p>
-            <img src="./images/icons/rise.svg">
+            <img src="./images/icons/rise.svg" alt="rise.svg">
         </div>
         <div>
             <p>Sunset: <span id="sunset"></span></p>
-            <img src="./images/icons/set.svg">
+            <img src="./images/icons/set.svg" alt="set.svg">
         </div>
         <div id="humid">
             <p>Humidity: <span id="humidity"></span>%</p>
